@@ -16,11 +16,27 @@
  * limitations under the License.
  */
 
-import org.apache.bristol.lastbus.Server;
+package org.apache.bristol.lastbus.types;
 
-public class Main {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-  public static void main(String[] args) throws Exception {
-    new Server().run();
+import java.util.List;
+
+/**
+ * A single bus
+ */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class BusRoute {
+
+  public String route;
+  public String stop;
+  public String direction;
+  public List<Departure> departures;
+
+  public static class Departure {
+    public String departing;
+    public long timestamp;
+
   }
 }

@@ -16,11 +16,12 @@
  * limitations under the License.
  */
 
-import org.apache.bristol.lastbus.Server;
+package org.apache.bristol.lastbus.types;
 
-public class Main {
+import java.util.HashMap;
+import java.util.Map;
 
-  public static void main(String[] args) throws Exception {
-    new Server().run();
-  }
+public class Buses {
+
+  public Map<String, BusRoute> routes = new HashMap<>(10);
 }
