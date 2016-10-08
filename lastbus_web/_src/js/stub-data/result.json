@@ -1,82 +1,23 @@
 {
-	"brands": [
+	"arrivalStation" : {
+		"name" : "Bristol Temple Meads",
+		"location" : {"lat" : 51.4498, "lng" : -2.5810}
+	},
+	"services": [
 		{
-			"id": "audi",
-			"name": "Audi",
-			"logo": "/content/dam/AudiConcierge/Audi/audiLogo3.png",
-			"banner": "/content/dam/AudiConcierge/Audi/audiLogo3.png",
-			"brandCode": "3",
-			"campaigns": [
-				{
-					"id": "Audi-festival-of-speed",
-					"name": "Audi Festival of Speed",
-					"from": "03/10/15",
-					"to": "03/27/15",
-					"code": "UKAU-CE-AUGDWD14CONAPP"
-				},
-				{
-					"id": "201501-e-tron-pop-up-store-concierge-app",
-					"name": "201501 E-tron pop up store Concierge app",
-					"from": "01/05/15",
-					"to": "05/27/15",
-					"code": "UKAU-CE-AUETRONPOP15"
-				}
-			]
+			"name": "8 - Westbury",
+			"time": "8:15",
+			"location" : {"lat" : 51.4494, "lng" : -2.5817}
 		},
 		{
-			"id": "volkswagen",
-			"name": "Volkswagen",
-			"logo": "/content/dam/AudiConcierge/Volkswagen/VW_Logo2.png",
-			"banner": "/content/dam/AudiConcierge/Volkswagen/VW_Logo2.png",
-			"brandCode": "1",
-			"campaigns": [
-				{
-					"id": "vw-goodwood2",
-					"name": "VW Goodwood",
-					"from": "05/19/14",
-					"to": "05/27/15",
-					"code": "UKVW-CE-VWGDWD14"
-				}
-			]
+			"name": "9 - Henleaze",
+			"time": "8:32",
+			"location" : {"lat" : 51.4492, "lng" : -2.58118}
 		},
 		{
-			"id": "skoda",
-			"name": "Skoda",
-			"logo": "/content/dam/AudiConcierge/Skoda/skodaLogo4c.png",
-			"banner": "/content/dam/AudiConcierge/Skoda/skodaLogoSmall.png",
-			"brandCode": "5",
-			"campaigns": [
-				{
-					"id": "metrocentre-shopping-centre",
-					"name": "Å KODA MetroCentre Shopping Centre",
-					"from": "02/13/15",
-					"to": "05/27/15",
-					"code": "UKSD-CE-SKMETRO15"
-				}
-			]
-		},
-		{
-			"id": "seat1",
-			"name": "SEAT",
-			"logo": "/content/dam/AudiConcierge/SEAT/seatLogo2.png",
-			"banner": "/content/dam/AudiConcierge/SEAT/seatLogo3.png",
-			"brandCode": "4",
-			"campaigns": [
-				{
-					"id": "seat-shopping-tour-2014-birmingham",
-					"name": "SEAT Shopping Tour 2014 - Birmingham",
-					"from": "03/04/15",
-					"to": "05/27/15",
-					"code": "UKST-CE-STBULLLEADS14"
-				},
-				{
-					"id": "seat-motability-events",
-					"name": "SEAT Motability Events",
-					"from": "05/04/15",
-					"to": "09/16/15",
-					"code": "UKST-CE-STMOTA2015"
-				}
-			]
+			"name": "2 - Cribbs Causeway",
+			"time": "8:12",
+			"location" : {"lat" : 51.44885, "lng" : -2.58401}
 		}
 	]
 }

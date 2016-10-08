@@ -19,11 +19,12 @@ define(['mvc', 'config', 'helpers/map-manager', 'text!templates/map.html'],
                 this.elements.map = $(MVC.View.Elements.Map.map);
                 this.elements.data = $(MVC.View.Elements.Map.data);
                 this.showMap();
+                this.showData();
             }
         });
         
         mapView.prototype.showData = function() {
-            this.elements.data.html('<pre>' + JSON.stringify(this.data) + '</pre>');
+            this.elements.data.html('<pre>' + JSON.stringify(window.lastbus.Maps.data) + '</pre>');
         };
         
         mapView.prototype.showMap = function(){
