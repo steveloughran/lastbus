@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LastBus</title>
+  </head>
+  
+  <body>
+    
+    
+    <div class="corpus" style="display:none">
+      
+      <main id="app-wrapper" class="main-content clearfix" role="main">
+        
+      </main><!-- /.main-content -->
+      
+    </div><!-- /.corpus -->
+    
+    <script src="build/assets/scripts/require.js"></script>
+    <script>
+      'use strict';
+      
+      var script = document.createElement('script');
+      script.setAttribute('src', 'build/assets/scripts/lastbus.js?ts=' + Date.now());
+      document.getElementsByTagName('body')[0].appendChild(script);
+      
+    </script>
+    
+    
+  </body>
+  
+</html>
