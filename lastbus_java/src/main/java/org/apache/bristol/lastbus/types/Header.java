@@ -16,7 +16,22 @@
  * limitations under the License.
  */
 
-package org.apache.bristol.lastbus;
+package org.apache.bristol.lastbus.types;
 
-public class LastBus {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class Header {
+  public long timestamp;
+  public String date;
+
+  public void touch() {
+    final SimpleDateFormat format = new SimpleDateFormat(
+        "EEE, dd MMM yyyy HH:mm:ss zzz", Locale.US);
+    timestamp = System.currentTimeMillis();
+    date = format.format(new Date(timestamp));
+
+  }
+
 }
