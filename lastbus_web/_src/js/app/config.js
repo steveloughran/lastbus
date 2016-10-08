@@ -16,6 +16,7 @@ define([],
             logErrors : false,
             logInfo: false,
             debugData : false,
-            appTitle: 'LastBus'
+            appTitle: 'LastBus',
+            gMapsApiKey: 'AIzaSyAosismVvL71sFAIGgWylP3agd57arsf6c'
         };
     });

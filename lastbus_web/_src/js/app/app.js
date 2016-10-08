@@ -8,19 +8,22 @@ define(
     'mvc',
     'regions/r-core',
     'controllers/c-main',
+    'helpers/map-manager',
     'jquery',
     'domready'
   ],
   function AppSetup(
     MVC,
     CoreRegion,
-    InitialController
+    InitialController,
+    MapManager
   ){
     // Create the global namespace region object.
     var initNamespace = function() {
       window.lastbus = window.lastbus || {
         Home : new InitialController(),
-        AppCanvas : new CoreRegion()
+        AppCanvas : new CoreRegion(),
+        Maps : MapManager
       };
       MVC.DefaultRegion = window.lastbus.AppCanvas;
     };

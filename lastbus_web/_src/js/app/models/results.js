@@ -2,11 +2,11 @@
 
 'use strict';
 
-define([],
-    function () {
+define(['config'],
+    function (Config) {
         
         var allResults = function() {
-            
+            this.apiKey = Config.apiKey;
             this.stops = [];
             return this;
         };

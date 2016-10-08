@@ -3,8 +3,8 @@
 
 'use strict';
 
-define(['mvc', 'config', 'text!templates/map.html'],
-    function(MVC, Config, TemplateSource) {
+define(['mvc', 'config', 'helpers/map-manager', 'text!templates/map.html'],
+    function(MVC, Config, MapManager, TemplateSource) {
         
         MVC.View.Elements.Map = {
             map : '#map',
@@ -18,6 +18,7 @@ define(['mvc', 'config', 'text!templates/map.html'],
             postRender : function() {
                 this.elements.map = $(MVC.View.Elements.Map.map);
                 this.elements.data = $(MVC.View.Elements.Map.data);
+                this.showMap();
             }
         });
         
@@ -26,7 +27,11 @@ define(['mvc', 'config', 'text!templates/map.html'],
         };
         
         mapView.prototype.showMap = function(){
-            var that = this;
+            var mapScript = document.createElement('script');
+            mapScript.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key=' + Config.gMapsApiKey + '&callback=window.lastbus.Maps.load');
+            mapScript.setAttribute('async', '');
+            mapScript.setAttribute('defer', '');
+            (document.getElementsByTagName('head')[0] || document.documentElement).appendChild(mapScript);
         };
         
         mapView.prototype.clearState = function() {
